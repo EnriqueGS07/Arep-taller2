@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Buscador {
-    ConcurrentHashMap<String, String> memoria = new ConcurrentHashMap<String, String>();
+    static ConcurrentHashMap<String, String> memoria = new ConcurrentHashMap<String, String>();
 
     /**
      * Metodo que realiza la busqueda de la pelicula en cache y si no lo encuentra va a la api

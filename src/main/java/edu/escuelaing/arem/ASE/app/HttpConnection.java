@@ -7,6 +7,9 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/**
+ *Clase que se encarga de conectarse a la api
+ */
 public class HttpConnection {
 
     private static final String USER_AGENT = "Mozilla/5.0";

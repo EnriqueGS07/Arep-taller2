@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Clase que hace de servidor web y ser la fachada para que el usuario interactue con la aplicacion
+ */
 public class HttpServer {
 
     /**

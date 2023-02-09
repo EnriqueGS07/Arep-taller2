@@ -10,6 +10,7 @@ public class Main {
             server.addService("/pagina", new HTMLService());
             server.addService("/estilos", new StyleService());
             server.addService("/script", new JsService());
+            server.addService("/foto", new JpgService());
             server.run();
         }
 

@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"edu.escuelaing.arem.ASE.app","l":"Buscador"},{"p":"edu.escuelaing.arem.ASE.app","l":"HttpConnection"},{"p":"edu.escuelaing.arem.ASE.app","l":"HttpServer"}]

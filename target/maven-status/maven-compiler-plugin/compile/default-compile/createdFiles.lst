@@ -1,2 +1,7 @@
+edu\escuelaing\arem\ASE\app\StyleService.class
+edu\escuelaing\arem\ASE\app\Main.class
+edu\escuelaing\arem\ASE\app\JpgService.class
+edu\escuelaing\arem\ASE\app\HTMLService.class
 edu\escuelaing\arem\ASE\app\HttpServer.class
+edu\escuelaing\arem\ASE\app\JsService.class
 edu\escuelaing\arem\ASE\app\Service.class

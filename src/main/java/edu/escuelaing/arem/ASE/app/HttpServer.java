@@ -15,7 +15,7 @@ public class HttpServer {
 
     private static HttpServer _instance = new HttpServer();
     private Map<String, Service> services = new HashMap<>();
-
+    private OutputStream outputStream;
 
     public static HttpServer getInstance() {
         return _instance;
@@ -54,6 +54,7 @@ public class HttpServer {
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(
                             clientSocket.getInputStream()));
+            outputStream = clientSocket.getOutputStream();
             String inputLine, outputLine;
 
             boolean first_line = true;
@@ -92,5 +93,9 @@ public class HttpServer {
             clientSocket.close();
         }
         serverSocket.close();
+    }
+
+    public OutputStream getOutputStream() {
+        return this.outputStream;
     }
 }

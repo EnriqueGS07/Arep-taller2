@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="arep-lab1" />
+        <module name="arep-lab2" />
         <module name="miprimera-app" />
       </profile>
     </annotationProcessing>

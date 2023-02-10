@@ -17,21 +17,39 @@ public class HttpServer {
     private Map<String, Service> services = new HashMap<>();
     private OutputStream outputStream;
 
+    /**
+     * Metodo que devuelve una instancia unica del servidor http
+     * @return instancia del servidor
+     */
     public static HttpServer getInstance() {
         return _instance;
     }
 
-    private String executeService(String serviceName) {
-        Service rs = services.get(serviceName);
+    /**
+     * Metodo que ejecuta un servicio
+     * @param service servicio que se desea ejecutar
+     * @return respuesta del servicio header y cuerpo de la peticion
+     */
+    private String executeService(String service) {
+        Service rs = services.get(service);
         String header = rs.getHeader();
         String body = rs.getResponse();
         return header + body;
     }
 
+    /**
+     * Metodo que agrega un servicio a la lista de servicios
+     * @param key nombre del servicio
+     * @param service servicio a agregar
+     */
     public void addService(String key, Service service) {
         services.put(key, service);
     }
 
+    /**
+     * Metodo para empezar a correr el servidor http
+     * @throws IOException
+     */
     public void run() throws IOException {
         ServerSocket serverSocket = null;
         try {
@@ -69,9 +87,12 @@ public class HttpServer {
                     break;
                 }
             }
-            if (request.startsWith("/apps/")) {
+            if(!services.containsKey(request.substring(5))){
+                System.out.println(request);
+                outputLine = executeService("/notFound");
+            }
+            else if (request.startsWith("/apps/")) {
                 outputLine = executeService(request.substring(5));
-                //outputLine = jsonSimple();
             }else{
                 outputLine = "HTTP/1.1 200 OK\r\n" +
                         "Content-type: text/html\r\n" +

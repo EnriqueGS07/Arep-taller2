@@ -1,0 +1,26 @@
+-classpath
+'C:/Users/SYG ARQUITECTOS/.m2/repository/org/json/json/20180130/json-20180130.jar'
+-encoding
+'Cp1252'
+-protected
+-source
+'1.6'
+-sourcepath
+'C:/Users/SYG ARQUITECTOS/Documents/noveno/AREP/Arep-taller2/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/SYG ARQUITECTOS/Documents/noveno/AREP/Arep-taller2/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'miprimera-app 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/6/docs/api' 'C:/Users/SYG ARQUITECTOS/Documents/noveno/AREP/Arep-taller2/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'miprimera-app 1.0-SNAPSHOT API'
